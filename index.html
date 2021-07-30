@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   <!-- Google Font -->
+   <link rel="preconnect" href="https://fonts.gstatic.com"> 
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="homepagenav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand logo" href="#"><span> Simple</span>Book</a> -->
+              <a class="navbar-brand logo" href="homepage.html"><img src="images/logo.png" alt="img-logo" class="img-logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Log In</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Booking</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Other Services</a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <section id="bmi-container">
+        <div class="row">
+            <div class="col-lg-6 bmitext-container">
+                <h4>BMI Calculator</h4>
+                <p>Being overweight or obese increases one’s risk of cardiovascular disease. Use our BMI Calculator tool to find out if you are of healthy weight.</p>
+                <h4>Who shouldn't use a BMI calculator</h4>
+                <p>BMI is not used for muscle builders, long distance athletes, pregnant women, the elderly or young children. This is because BMI does not take into account whether the weight is carried as muscle or fat, just the number. Those with a higher muscle mass, such as athletes, may have a high BMI but not be at greater health risk. Those with a lower muscle mass, such as children who have not completed their growth or the elderly who may be losing some muscle mass may have a lower BMI. During pregnancy and lactation, a woman's body composition changes, so using BMI is not appropriate.</p>
+            </div>
+            <div class="col-lg-6 input-container">
+              
+                <img src="images/weighing.png" alt="weighing-img" class="weighing-img">
+                <p class="bmi-question">What is your weight & height?</p>
+
+                <p><input type="text" class="weight-input" required pattern="[0-9]+"/> <span class="units">kg</span></p>
+                <p><input type="text" class="height-input" required pattern="[0-9]+"/> <span class="unit">cm</span></p>
+                <button class="submit-input" type="submit">Calculate</button>
+                <button class="reset-btn" type="submit">Reset</button>
+              
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container foot">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h5>Enquiries</h5>
+                    <ul class>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Health Articles</a></li>
+                        <li><a href="">BMI Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h5>Learn More</h5>
+                    <ul class>
+                        
+                        <li><a href="" target="_blank">About Us</a></li>
+                    </ul>
+                </div>
+
+            
+            </div>
+        </div>
+        <p>Copyright © Cedric Woo. All Rights Reserved.</p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
